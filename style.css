@@ -1,0 +1,520 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ::selection{
+        background-color: white;
+        color: black;
+    }
+    scrollbar-width: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    width: 100vw;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.918);
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding-top: 10px;
+}
+nav h1{
+    font-size: 32px;
+    color: rgba(0, 255, 255, 0.905);
+    font-family: 'Playwrite NZ';
+    margin-left: -10%;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    color: pink;
+}
+ul li a{
+    text-decoration: none;
+    color:#289bff;
+    font-size: 21px;
+    padding: 20px;
+    letter-spacing:2px;
+}
+ul li a:hover{
+    color: red;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.918);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box{
+    width: 40%;
+    height: 60%;
+    margin-top: -10%;
+    margin-left: 10%;
+    /* background-color:bisque; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cur{
+    width: 5vw;
+    height: 10vh;
+    background-color: rgba(255, 255, 0, 0.321);
+    border-radius: 50%;
+    z-index: 10;
+    position: absolute;
+    scale: 0;
+}
+.c1{
+    width: 75%;
+    height: 100%;
+    background-color:rgba(88, 87, 87, 0.118);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c2{
+    width: 80%;
+    height: 90%;
+    background-color:rgba(88, 87, 87, 0.194);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c3{
+    width: 80%;
+    height: 80%;
+    background-color:rgba(68, 68, 68, 0.186);
+    border-radius: 50%;
+    background-image: url("assets/jainil.webp");
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cont{
+    width: 35%;
+    height: 55%;
+    margin-top: -10%;
+    /* background-color: azure; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nb{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.552);
+    position: absolute;
+    z-index: 30;
+    scale: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 10vh;
+}
+.nb ul{
+    list-style: none;
+}
+
+.cont h2{
+    color: white;
+    font-family: 'Playwrite NZ';
+    font-size: 34px;
+    position: absolute;
+    margin-bottom: 8%;
+    margin-left: -10%;
+}
+.cont h1{
+    width: 100vw;
+    font-family: 'Playwrite NZ';
+    color: white;
+    font-size: 32px;
+}
+
+.cont h3{
+    position: absolute;
+    margin-top: 9%;
+    line-height: 2px;
+    margin-left: 5%;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+}
+
+button{
+    position: absolute;
+    font-size: 20px;
+    width: 150px;
+    height:50px;
+    top: 35%;
+    left: 25%;
+    cursor: pointer;
+    background-color: transparent;
+    border: solid 0.5px orange;
+    color: orange;
+    border-radius: 13px;
+    box-shadow: 0px 2px 10px;
+}
+button:hover{
+    background-color: rgba(255, 166, 0, 0.747);
+    color: black;
+    border: none;
+    box-shadow: none;
+    transition: all 1s ease-out;
+}
+
+.sm{
+    width: 10vw;
+    height: 10hv;
+    /* background-color: red; */
+    position: absolute;
+    top: 43%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sm a i{
+    width: 49%;
+    height: 100%;
+    font-size: 25px;
+    color: blue;
+}
+.bar{
+    position:absolute;
+    right: 20px;
+    margin-top: 2%;
+    display: none;
+    cursor: pointer;
+}
+.bar i{
+    font-size: 23px;
+    color: white;
+    
+}
+#insta{
+    color: rgb(219, 43, 219);
+
+}
+.x{
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    margin-right: -80%;
+    margin-top: -30%;
+    cursor: pointer;
+}
+/* .x i{
+    position: absolute;
+    color: white;
+    margin-right: 0%;
+} */
+
+/* Media Quaryyes to make code responsive */ 
+ @media screen and (max-width:1260px) {
+    .c1{
+        width:80%;
+        height: 70%;
+    }
+    .sm{
+        top:77%;
+    }
+    .cur{
+        width: 3.5vw;
+        height: 5vh;
+    }
+    .x{
+        margin-top: -55%;
+    }
+}
+
+@media screen and (max-width:1180px) {
+    
+    .c1{
+        width:80%;
+        height: 70%;
+    
+    }
+    .cont{
+        
+    }
+} 
+
+@media screen and (max-width:1045px) {
+    .cont h1{
+        font-size: 16px;
+         margin-left: 50px;
+     }
+    .cont h3{
+        font-size: 14px;
+    }
+    .cont h2{
+        font-size: 17px;
+    }
+    .c1{
+        width: 90%;
+        height: 60%;
+    }
+    button{
+        width:90px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .x{
+        margin-top: -60%;
+    }
+} 
+
+@media screen and (max-width:924px) {
+    .c1{
+        width: 90%;
+        height: 60%;
+    }
+    .box{
+        margin-top: -20%;
+    }
+    .cont{
+        margin-top: -20%;
+    }
+    button{
+        margin-top: -9%;
+    }
+    .x{
+        margin-top: -60%;
+    }
+}
+
+@media screen and (max-width:702px){
+    nav h1{
+        font-size: 25px;
+        margin-left: 10%;
+    }
+    .c1{
+        width: 90%;
+        height: 50%;
+        margin-top: -40%;
+    }
+    .cont{
+        margin-top: -40%;
+    }
+    button{
+        margin-top: -20%;
+    }
+    .sm{
+        margin-top: -20%;
+    }
+    .x{
+        margin-top: -85%;
+    }
+    .nb ul{
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width:560px){
+    .x{
+        margin-top: -115%;
+    } 
+}
+
+@media screen and (max-width:654px){
+    .main{
+        flex-direction: column-reverse;
+    }
+    .c1{
+        width: 120%;
+        height: 50%;
+        margin-top: 40%;
+        margin-left: -20%;
+    }
+    .sm{
+        top:65%;
+    }
+    .sm i{
+        padding: 10px;
+    }
+    button{
+        top:95%;
+        left: 50%;
+    }
+    nav ul{
+        display: none;
+        margin-left: -10%;
+    }
+    .bar{
+        display: block;
+        margin-top: 2.6%;
+    }
+    .cont{
+        margin-top: 0%;
+    }
+    .cont h1{
+        padding-top: 30px;
+        margin-left: -50px;
+    }
+    .cont h3{
+        padding-top: 50px;
+    }
+    .bar{
+        margin-top: 6%;
+    }
+    nav h1{
+        margin-left: -2%;
+    }
+}
+
+@media screen and (max-width:510px){
+    .box{
+        width: 60%;
+        height: 60%;
+    }
+    button{
+        margin-top: -17%;
+    }
+    .c1{
+        width: 90%;
+        height: 50%;
+    }
+    .cont h3{
+        padding-top: 40px;
+    }
+    .cont h2{
+        padding-bottom:40px;
+    }
+    .x{
+        margin-top: -145%;
+    }
+    .bar{
+        margin-top: 7%;
+    }
+}
+@media screen and (max-width:472px){
+    .box{
+        width: 40%;
+        height: 90%;
+        
+    }
+    .c1{
+        width: 100%;
+        height: 60%;
+    }
+    .cont h2{
+        padding-bottom: 40px;
+        font-size: 15px;
+    }
+    .cont h1{
+        padding-top: 20px;
+        font-size: 12px;
+    }
+    .cont h3{
+        padding-top: 80px;
+        padding-left: 30px;
+        font-size: 10px;
+    }
+    button{
+        margin-top: -7%;
+    }
+    .sm{
+        margin-top: -30%;
+    }
+    .c1{
+        width: 160%;
+        height: 40%;
+    }
+    .bar{
+        margin-top: 7%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .c1{
+        width: 130%;
+        height: 30%;
+    }
+    .x{
+        margin-top: -165%;
+    }
+    .bar{
+        margin-top: 7%;
+    }
+}
+
+
+/* Work Section */
+
+#sec2{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.918);
+}
+#sec2 h1{
+    color: whitesmoke;
+    padding:5%;
+}
+#box{
+    width: 100vw;
+    height: 60vh;
+    /* background: greenyellow; */
+    display: flex;
+    padding: 10px;
+
+
+}
+.img{
+    width: 550px;
+    height: 300px;
+    background: black;
+    background-image: url("/assets/nike.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-shadow: rgba(12, 101, 168, 0.25) 0px 54px 55px, rgba(12, 101, 168, 0.25) 0px -12px 30px, rgba(12, 101, 168, 0.25) 0px 4px 6px, rgba(12, 101, 168, 0.25) 0px 12px 13px, rgba(12, 101, 168, 0.25) 0px -3px 5px;
+}
+.img:hover{
+    box-shadow: rgba(231, 48, 48, 0.25) 0px 54px 55px, rgba(231, 48, 48, 0.25) 0px -12px 30px, rgba(12, 101, 168, 0.25) 0px 4px 6px, rgba(12, 101, 168, 0.25) 0px 12px 13px, rgba(12, 101, 168, 0.25) 0px -3px 5px;
+    transition: all ease-out 0.3s;
+    scale: 0.98;
+}
+
+#cont{
+    padding: 10px;
+    margin-top: 7%;
+    text-align: center;
+    color: white;
+}
+
+#bn{
+    position: relative;
+    width: 18%;
+    height: 60px;
+    margin-left: -110%;
+    background-color: rgba(255, 255, 255, 0.906);
+    color: black;
+    border: none;
+    margin-top: -40%;
+}
+#bn a{
+    text-decoration: none;
+    color: black;
+}
+#bn:hover{
+    background-color: black;
+    color: white;
+    transition: all ease-out 0.5s;
+}
+#bn:hover a{
+    color: white;
+}
+
